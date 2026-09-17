@@ -1,38 +1,49 @@
-Developing a Neural Network Regression Model
-Name: ALDRIN S
-Register Number: 212223240005
-AIM
+# Developing a Neural Network Regression Model
+
+### Name: SELVA GANESH R
+### Register Number: 212223230200
+
+## AIM
 To develop a neural network regression model for the given dataset.
 
-THEORY
+## THEORY
 Regression problems involve predicting a continuous output variable based on input features. Traditional linear regression models often struggle with complex patterns in data. Neural networks, specifically feedforward neural networks, can capture these complex relationships by using multiple layers of neurons and activation functions. In this experiment, a neural network model is introduced with a single linear layer that learns the parameters weight and bias using gradient descent.
 
-Neural Network Model
+## Neural Network Model
 Include the neural network model diagram.
 
-DESIGN STEPS
-STEP 1: Generate Dataset
-Create input values from 1 to 50 and add random noise to introduce variations in output values .
+## DESIGN STEPS
+### STEP 1: Generate Dataset
 
-STEP 2: Initialize the Neural Network Model
+Create input values  from 1 to 50 and add random noise to introduce variations in output values .
+
+### STEP 2: Initialize the Neural Network Model
+
 Define a simple linear regression model using torch.nn.Linear() and initialize weights and bias values randomly.
 
-STEP 3: Define Loss Function and Optimizer
+### STEP 3: Define Loss Function and Optimizer
+
 Use Mean Squared Error (MSE) as the loss function and optimize using Stochastic Gradient Descent (SGD) with a learning rate of 0.001.
 
-STEP 4: Train the Model
+### STEP 4: Train the Model
+
 Run the training process for 100 epochs, compute loss, update weights and bias using backpropagation.
 
-STEP 5: Plot the Loss Curve
+### STEP 5: Plot the Loss Curve
+
 Track the loss function values across epochs to visualize convergence.
 
-STEP 6: Visualize the Best-Fit Line
+### STEP 6: Visualize the Best-Fit Line
+
 Plot the original dataset along with the learned linear model.
 
-STEP 7: Make Predictions
-Use the trained model to predict for a new input value .
+### STEP 7: Make Predictions
 
-PROGRAM
+Use the trained model to predict  for a new input value .
+
+## PROGRAM
+
+```
 import torch
 import torch.nn as nn
 import numpy as np
@@ -123,16 +134,24 @@ plt.show()
 
 
 
-Dataset Information
-image
-OUTPUT
+```
+
+### Dataset Information
+
+<img width="872" height="625" alt="image" src="https://github.com/user-attachments/assets/a40c0c4c-6388-4bae-8452-ded39567756e" />
+
+### OUTPUT
 Training Loss Vs Iteration Plot
 
-image
+<img width="793" height="533" alt="image" src="https://github.com/user-attachments/assets/53c60a2e-4b1e-4dfe-a809-2f930fa6a18f" />
+
 Best Fit line plot
 
-image
-New Sample Data Prediction
-image
-RESULT
+<img width="937" height="587" alt="image" src="https://github.com/user-attachments/assets/6fb5b62f-1c4c-480f-af1d-b53f1a6d3440" />
+
+
+### New Sample Data Prediction
+<img width="542" height="85" alt="image" src="https://github.com/user-attachments/assets/1fa4bf42-04f9-4305-8a35-29214d37ad18" />
+
+## RESULT
 Thus, a neural network regression model was successfully developed and trained using PyTorch.
